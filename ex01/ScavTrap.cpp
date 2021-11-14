@@ -6,7 +6,7 @@
 /*   By: aborboll <aborboll@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/14 18:58:44 by aborboll          #+#    #+#             */
-/*   Updated: 2021/11/14 19:52:30 by aborboll         ###   ########.fr       */
+/*   Updated: 2021/11/14 19:56:12 by aborboll         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,7 +64,6 @@ std::ostream & operator<<(std::ostream & stream , ScavTrap & scav)
 		"\tAttack Damage: " << scav.getAttackDamage() << std::endl;
 	return stream;
 }
-
 
 //Other
 void		ScavTrap::setup()
