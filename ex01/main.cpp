@@ -6,19 +6,19 @@
 /*   By: aborboll <aborboll@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/14 16:28:58 by aborboll          #+#    #+#             */
-/*   Updated: 2021/11/14 18:49:37 by aborboll         ###   ########.fr       */
+/*   Updated: 2021/11/14 19:29:26 by aborboll         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ClapTrap.hpp"
+#include "ScavTrap.hpp"
 
 int main(void)
 {
-	ClapTrap	anonymous;
+	ScavTrap	anonymous;
 
-	ClapTrap	elonMusk("elonMusk");
-	ClapTrap	bitcoin("bitcoin");
-	ClapTrap	bitcoinCopy(bitcoin);
+	ScavTrap	elonMusk("elonMusk");
+	ScavTrap	bitcoin("bitcoin");
+	ScavTrap	bitcoinCopy(bitcoin);
 
 	std::cout << std::endl << elonMusk << std::endl << bitcoin << std::endl;
 
@@ -31,5 +31,6 @@ int main(void)
 	std::cout << std::endl << bitcoin << std::endl;
 	bitcoin.beRepaired(10);
 	std::cout << std::endl << bitcoin << std::endl;
+	anonymous.guardGate();
 	return (0);
 }
