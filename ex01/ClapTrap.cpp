@@ -6,7 +6,7 @@
 /*   By: aborboll <aborboll@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/14 16:47:53 by aborboll          #+#    #+#             */
-/*   Updated: 2021/11/14 18:49:29 by aborboll         ###   ########.fr       */
+/*   Updated: 2021/11/14 19:44:30 by aborboll         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -104,6 +104,27 @@ size_t		ClapTrap::getAttackDamage(void)
 std::string	ClapTrap::getName(void)
 {
 	return (this->name);
+}
+
+//Clap setters
+void		ClapTrap::setHitPoints(size_t num)
+{
+	this->hitpoints = num;
+}
+
+void		ClapTrap::setEnergyPoints(size_t num)
+{
+	this->energy_points = num;
+}
+
+void		ClapTrap::setAttackDamage(size_t num)
+{
+	this->attack_damage = num;
+}
+
+void		ClapTrap::setName(std::string name)
+{
+	this->name = name;
 }
 
 //Clap state management

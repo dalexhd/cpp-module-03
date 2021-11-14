@@ -6,7 +6,7 @@
 /*   By: aborboll <aborboll@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/14 16:29:54 by aborboll          #+#    #+#             */
-/*   Updated: 2021/11/14 18:21:29 by aborboll         ###   ########.fr       */
+/*   Updated: 2021/11/14 19:51:07 by aborboll         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,6 +37,11 @@ class ClapTrap
 		size_t		getEnergyPoints(void);
 		size_t		getAttackDamage(void);
 		std::string	getName(void);
+		//Setters
+		void		setHitPoints(size_t num);
+		void		setEnergyPoints(size_t num);
+		void		setAttackDamage(size_t num);
+		void		setName(std::string name);
 		//Announcements
 		void		born(void);
 		void		outOfFuel(void);
