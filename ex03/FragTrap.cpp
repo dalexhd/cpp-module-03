@@ -6,14 +6,14 @@
 /*   By: aborboll <aborboll@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/14 18:58:44 by aborboll          #+#    #+#             */
-/*   Updated: 2021/11/23 19:01:35 by aborboll         ###   ########.fr       */
+/*   Updated: 2021/11/23 20:03:51 by aborboll         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "FragTrap.hpp"
 
 //Clap constructors & destructors
-FragTrap::FragTrap(void) : ClapTrap("Anonymous")
+FragTrap::FragTrap(void) : ClapTrap()
 {
 	std::cout << "FragTrap Default constructor called" << std::endl;
 	this->setup();
