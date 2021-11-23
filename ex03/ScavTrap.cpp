@@ -6,38 +6,34 @@
 /*   By: aborboll <aborboll@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/14 18:58:44 by aborboll          #+#    #+#             */
-/*   Updated: 2021/11/23 19:56:07 by aborboll         ###   ########.fr       */
+/*   Updated: 2021/11/23 20:46:09 by aborboll         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ScavTrap.hpp"
 
 //Clap constructors & destructors
-ScavTrap::ScavTrap(void)
+ScavTrap::ScavTrap(void) : ClapTrap()
 {
 	std::cout << "ScavTrap Default constructor called" << std::endl;
 	this->setup();
-	this->born();
 }
 
 ScavTrap::ScavTrap(std::string name) : ClapTrap(name)
 {
 	std::cout << "ScavTrap Constructor called" << std::endl;
 	this->setup();
-	this->born();
 }
 
 ScavTrap::ScavTrap(const ScavTrap &name) : ClapTrap(name)
 {
 	std::cout << "ScavTrap Copy constructor called." << std::endl;
 	this->setup();
-	this->born();
 }
 
 ScavTrap::~ScavTrap()
 {
 	std::cout << "ScavTrap Destructor called" << std::endl;
-	this->die();
 }
 
 //Clap actions

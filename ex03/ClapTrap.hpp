@@ -6,7 +6,7 @@
 /*   By: aborboll <aborboll@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/14 16:29:54 by aborboll          #+#    #+#             */
-/*   Updated: 2021/11/23 20:02:18 by aborboll         ###   ########.fr       */
+/*   Updated: 2021/11/23 20:54:35 by aborboll         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,10 +45,8 @@
 			void		setAttackDamage(size_t num);
 			void		setName(std::string name);
 			//Announcements
-			void		born(void);
 			void		outOfFuel(void);
 			void		needsGym(void);
-			void		die();
 			//State management
 			bool		hasEnergy(void);
 			bool		hasMuscles(void);

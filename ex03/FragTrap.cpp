@@ -6,7 +6,7 @@
 /*   By: aborboll <aborboll@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/14 18:58:44 by aborboll          #+#    #+#             */
-/*   Updated: 2021/11/23 20:03:51 by aborboll         ###   ########.fr       */
+/*   Updated: 2021/11/23 20:52:17 by aborboll         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,6 @@ FragTrap::FragTrap(void) : ClapTrap()
 {
 	std::cout << "FragTrap Default constructor called" << std::endl;
 	this->setup();
-	this->born();
 }
 
 FragTrap::FragTrap(std::string name) : ClapTrap(name)
@@ -25,20 +24,17 @@ FragTrap::FragTrap(std::string name) : ClapTrap(name)
 	std::cout << "FragTrap Constructor called" << std::endl;
 	this->setup();
 	this->setName(name);
-	this->born();
 }
 
 FragTrap::FragTrap(const FragTrap &name) : ClapTrap(name)
 {
 	std::cout << "FragTrap Copy constructor called." << std::endl;
 	this->setup();
-	this->born();
 }
 
 FragTrap::~FragTrap()
 {
 	std::cout << "FragTrap Destructor called" << std::endl;
-	this->die();
 }
 
 //Clap actions

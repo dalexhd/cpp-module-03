@@ -6,7 +6,7 @@
 /*   By: aborboll <aborboll@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/14 16:47:53 by aborboll          #+#    #+#             */
-/*   Updated: 2021/11/14 19:44:30 by aborboll         ###   ########.fr       */
+/*   Updated: 2021/11/23 20:54:32 by aborboll         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,29 +15,25 @@
 //Clap constructors & destructors
 ClapTrap::ClapTrap(void)
 {
-	std::cout << "Default constructor called" << std::endl;
 	this->name = "Anonymous";
-	this->born();
+	std::cout << "Default constructor called" << std::endl;
 }
 
 ClapTrap::ClapTrap(std::string name)
 {
 	std::cout << "Constructor called" << std::endl;
 	this->name = name;
-	this->born();
 }
 
 ClapTrap::ClapTrap(const ClapTrap &name)
 {
 	std::cout << "Copy constructor called." << std::endl;
 	*this = name;
-	this->born();
 }
 
 ClapTrap::~ClapTrap()
 {
 	std::cout << "Destructor called" << std::endl;
-	this->die();
 }
 
 //Clap actions
@@ -64,15 +60,6 @@ void		ClapTrap::beRepaired(unsigned int amount)
 }
 
 //Clap announcements
-void		ClapTrap::born()
-{
-	std::cout << "ClapTrap " << this->getName() << " (" << std::addressof(*this) << ")" << " baby has born! Let's damage him, maybe... ( ͡° ͜ʖ ͡°)" << std::endl;
-}
-
-void		ClapTrap::die()
-{
-	std::cout << "ClapTrap " << this->getName() << " (" << std::addressof(*this) << ")" << " has died!" << std::endl;
-}
 
 void		ClapTrap::outOfFuel(void)
 {
