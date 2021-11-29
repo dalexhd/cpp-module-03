@@ -6,7 +6,7 @@
 /*   By: aborboll <aborboll@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/14 18:58:44 by aborboll          #+#    #+#             */
-/*   Updated: 2021/11/23 20:52:17 by aborboll         ###   ########.fr       */
+/*   Updated: 2021/11/29 12:35:22 by aborboll         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,9 +62,9 @@ std::ostream & operator<<(std::ostream & stream , FragTrap & scav)
 //Other
 void		FragTrap::setup()
 {
-	this->setHitPoints(100);
-	this->setEnergyPoints(100);
-	this->setAttackDamage(30);
+	this->setHitPoints(FR_HIT_POINTS);
+	this->setEnergyPoints(FR_ENERGY_POINTS);
+	this->setAttackDamage(FR_ATTACK_POINTS);
 }
 
 void		FragTrap::highFivesGuys()

@@ -6,7 +6,7 @@
 /*   By: aborboll <aborboll@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/14 18:58:44 by aborboll          #+#    #+#             */
-/*   Updated: 2021/11/23 20:46:09 by aborboll         ###   ########.fr       */
+/*   Updated: 2021/11/29 12:37:00 by aborboll         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,9 +61,9 @@ std::ostream & operator<<(std::ostream & stream , ScavTrap & scav)
 //Other
 void		ScavTrap::setup()
 {
-	this->setHitPoints(100);
-	this->setEnergyPoints(50);
-	this->setAttackDamage(20);
+	this->setHitPoints(SV_HIT_POINTS);
+	this->setEnergyPoints(SV_ENERGY_POINTS);
+	this->setAttackDamage(SV_ATTACK_POINTS);
 }
 
 void		ScavTrap::guardGate()
